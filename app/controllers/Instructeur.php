@@ -93,7 +93,6 @@ class Instructeur extends BaseController
         $result = $this->instructeurModel->getVrijeVoertuigen($Id);
         if($result != null){
             $tableRows = "";
-            var_dump(URLROOT);
             foreach($result as $voertuig){
                 $tableRows .= "<tr>
                                 <td>$voertuig->TypeVoertuig</td>
